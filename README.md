@@ -1,1 +1,1 @@
-# Trabajo-Pr-ctico---Tienda-Online-en-React
+# Trabajo-Practico---Tienda-Online-en-React
