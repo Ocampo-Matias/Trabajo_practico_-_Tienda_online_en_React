@@ -1,0 +1,16 @@
+:root {
+  --color-fondo: #f6f3ec;
+  --color-superficie: #ffffff;
+  --color-principal: #394336;
+  --color-texto-principal: #24251f;
+  --color-texto-secundario: #62675a;
+  --color-secundario: #7a806d;
+  --color-acento: #b47a4a;
+  --color-acento-hover: #8f5d39;
+  --color-bordes: #dcd8cc;
+  --color-fondo-alternativo: #eeeae0;
+  --color-exito: #687a58;
+  --color-error: #a85c52;
+  --color-advertencia: #c49358;
+  --color-sombra: rgba(36, 37, 31, 0.12);
+}
