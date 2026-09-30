@@ -1,0 +1,134 @@
+.navbar-tienda {
+  background-color: var(--color-principal);
+  box-shadow: 0 2px 12px var(--color-sombra);
+  padding: 0.6rem 0;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar-logo-icono {
+  font-size: 1.6rem;
+}
+
+.navbar-logo-texto {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  font-family: 'Georgia', serif;
+}
+
+.navbar-brand:hover .navbar-logo-texto {
+  color: var(--color-acento);
+}
+
+.navbar-toggler {
+  background: transparent;
+  border: 1px solid var(--color-acento);
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon-custom {
+  color: var(--color-fondo);
+  font-size: 1.3rem;
+}
+
+.navbar-buscador {
+  width: 100%;
+  max-width: 380px;
+}
+
+.buscador-input {
+  background-color: var(--color-fondo-alternativo);
+  border: 1.5px solid var(--color-bordes);
+  border-right: none;
+  color: var(--color-texto-principal);
+  border-radius: 8px 0 0 8px;
+  font-size: 0.92rem;
+}
+
+.buscador-input:focus {
+  border-color: var(--color-acento);
+  box-shadow: none;
+  outline: none;
+}
+
+.buscador-btn {
+  background-color: var(--color-acento);
+  border: 1.5px solid var(--color-acento);
+  border-radius: 0 8px 8px 0;
+  color: white;
+}
+
+.buscador-btn:hover {
+  background-color: var(--color-acento-hover);
+}
+
+.nav-link-tienda {
+  color: var(--color-fondo-alternativo) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.nav-link-tienda:hover {
+  background-color: rgba(246, 243, 236, 0.12);
+  color: var(--color-fondo) !important;
+}
+
+.nav-link-tienda.activo {
+  color: var(--color-acento) !important;
+  background-color: rgba(180, 122, 74, 0.15);
+}
+
+.nav-link-carrito {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem !important;
+  background-color: var(--color-acento);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.nav-link-carrito:hover,
+.nav-link-carrito.activo {
+  background-color: var(--color-acento-hover);
+}
+
+.carrito-icono {
+  font-size: 1.2rem;
+}
+
+.carrito-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: var(--color-error);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-principal);
+}
+
+@media (max-width: 991px) {
+  .navbar-buscador {
+    max-width: 100%;
+    margin: 0.75rem 0;
+  }
+
+  .nav-link-carrito {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,113 @@
+.tarjeta-producto {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-bordes);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 2px 6px var(--color-sombra);
+}
+
+.tarjeta-enlace-imagen {
+  display: block;
+  overflow: hidden;
+  background-color: var(--color-fondo-alternativo);
+}
+
+.tarjeta-imagen {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta-cuerpo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.4rem;
+}
+
+.tarjeta-categoria {
+  font-size: 0.75rem;
+  color: var(--color-texto-secundario);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tarjeta-titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-texto-principal);
+  margin: 0;
+}
+
+.tarjeta-precio {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-principal);
+  margin: 0.2rem 0;
+}
+
+.tarjeta-stock {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+  margin-top: auto;
+  padding-bottom: 0.5rem;
+}
+
+.con-stock {
+  color: var(--color-exito);
+}
+
+.sin-stock {
+  color: var(--color-error);
+}
+
+.tarjeta-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boton-detalle {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-principal);
+  background-color: transparent;
+  border: 1px solid var(--color-principal);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.boton-detalle:hover {
+  background-color: var(--color-principal);
+  color: var(--color-fondo);
+}
+
+.boton-agregar {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-acento);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton-agregar:hover:not(:disabled) {
+  background-color: var(--color-acento-hover);
+}
+
+.boton-agregar:disabled {
+  background-color: var(--color-bordes);
+  color: var(--color-texto-secundario);
+  cursor: not-allowed;
+}

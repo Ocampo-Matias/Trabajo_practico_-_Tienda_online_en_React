@@ -1,0 +1,11 @@
+.pagina-productos {
+  padding: 2.5rem 0;
+}
+
+.productos-titulo {
+  font-family: 'Georgia', serif;
+  color: var(--color-principal);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}

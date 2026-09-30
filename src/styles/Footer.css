@@ -1,0 +1,88 @@
+.footer-tienda {
+  background-color: var(--color-principal);
+  color: var(--color-fondo-alternativo);
+  border-top: 3px solid var(--color-acento);
+}
+
+.footer-contenido {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+  padding: 2.5rem 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-marca {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 220px;
+}
+
+.footer-logo-icono {
+  font-size: 1.8rem;
+}
+
+.footer-logo-texto {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  font-family: 'Georgia', serif;
+}
+
+.footer-descripcion {
+  font-size: 0.85rem;
+  color: var(--color-secundario);
+  margin: 0;
+}
+
+.footer-titulo-seccion {
+  color: var(--color-acento);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links ul,
+.footer-contacto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-links a {
+  color: var(--color-fondo-alternativo);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: var(--color-acento);
+}
+
+.footer-contacto li {
+  font-size: 0.88rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(246, 243, 236, 0.1);
+  padding: 0.9rem 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-secundario);
+}
+
+@media (max-width: 600px) {
+  .footer-contenido {
+    flex-direction: column;
+    padding: 2rem 1.5rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    padding: 0.9rem 1.5rem;
+  }
+}
