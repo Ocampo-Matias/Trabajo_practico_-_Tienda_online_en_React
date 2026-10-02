@@ -21,8 +21,8 @@ function Navbar({ cantidadCarrito = 0 }) {
       <div className="container-fluid px-4">
 
         <NavLink to="/" className="navbar-brand d-flex align-items-center gap-2">
-          <span className="navbar-logo-icono">🪵</span>
-          <span className="navbar-logo-texto">MaderArte</span>
+          <img src="/la-mesasa-icono.png" alt="La Mesasa" className="navbar-logo-img" />
+          <span className="navbar-logo-texto">La Mesasa</span>
         </NavLink>
 
         <button
@@ -93,7 +93,7 @@ function Navbar({ cantidadCarrito = 0 }) {
                   `nav-link nav-link-carrito${isActive ? ' activo' : ''}`
                 }
               >
-                <span className="carrito-icono">🛒</span>
+                <img src="/icono-carrito.jpg" alt="Carrito" className="carrito-img-icono" />
                 {cantidadCarrito > 0 && (
                   <span className="carrito-badge">{cantidadCarrito}</span>
                 )}

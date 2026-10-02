@@ -8,8 +8,11 @@
   text-decoration: none;
 }
 
-.navbar-logo-icono {
-  font-size: 1.6rem;
+.navbar-logo-img {
+  height: 36px;
+  width: 150px;
+  object-fit: contain;
+  margin-right: -42px;
 }
 
 .navbar-logo-texto {
@@ -101,8 +104,10 @@
   background-color: var(--color-acento-hover);
 }
 
-.carrito-icono {
-  font-size: 1.2rem;
+.carrito-img-icono {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
 }
 
 .carrito-badge {

@@ -1,0 +1,115 @@
+.pagina-carrito {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.carrito-titulo {
+  font-family: 'Georgia', serif;
+  color: var(--color-principal);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.carrito-vacio {
+  padding: 4rem 1rem;
+}
+
+.carrito-vacio h2 {
+  font-family: 'Georgia', serif;
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
+}
+
+.carrito-vacio p {
+  color: var(--color-texto-secundario);
+  margin-bottom: 1.5rem;
+}
+
+.boton-volver-tienda {
+  display: inline-block;
+  background-color: var(--color-principal);
+  color: var(--color-fondo);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.boton-volver-tienda:hover {
+  background-color: var(--color-acento);
+  color: #ffffff;
+}
+
+.enlace-seguir-comprando {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+
+.enlace-seguir-comprando:hover {
+  color: var(--color-principal);
+}
+
+.boton-vaciar {
+  background: transparent;
+  border: 1px solid var(--color-bordes);
+  color: var(--color-texto-secundario);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.boton-vaciar:hover {
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+.tarjeta-resumen {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-bordes);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px var(--color-sombra);
+}
+
+.tarjeta-resumen h3 {
+  font-size: 1.25rem;
+  font-family: 'Georgia', serif;
+  color: var(--color-principal);
+  margin-bottom: 1.2rem;
+}
+
+.resumen-fila-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-bordes);
+  border-bottom: 1px solid var(--color-bordes);
+  margin-bottom: 1.5rem;
+}
+
+.resumen-precio {
+  font-size: 1.4rem;
+  color: var(--color-principal);
+}
+
+.boton-comprar {
+  width: 100%;
+  background-color: var(--color-acento);
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-comprar:hover {
+  background-color: var(--color-acento-hover);
+}

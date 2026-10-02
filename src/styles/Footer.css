@@ -19,8 +19,11 @@
   max-width: 220px;
 }
 
-.footer-logo-icono {
-  font-size: 1.8rem;
+.footer-logo-img {
+  height: 36px;
+  width: 100px;
+  object-fit: contain;
+
 }
 
 .footer-logo-texto {

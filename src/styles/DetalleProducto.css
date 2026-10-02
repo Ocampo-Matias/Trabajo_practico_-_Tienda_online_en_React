@@ -1,0 +1,122 @@
+.detalle-contenedor {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.detalle-volver {
+  display: inline-block;
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.detalle-volver:hover {
+  color: var(--color-principal);
+}
+
+.detalle-imagen-contenedor {
+  background-color: var(--color-fondo-alternativo);
+  border: 1px solid var(--color-bordes);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.detalle-imagen {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.detalle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.detalle-categoria {
+  font-size: 0.85rem;
+  color: var(--color-texto-secundario);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.detalle-titulo {
+  font-size: 1.8rem;
+  font-family: 'Georgia', serif;
+  color: var(--color-principal);
+  margin: 0;
+}
+
+.detalle-precio {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-principal);
+  margin: 0;
+}
+
+.detalle-descripcion {
+  font-size: 1rem;
+  color: var(--color-texto-secundario);
+  line-height: 1.5;
+}
+
+.detalle-ficha {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-bordes);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.detalle-ficha h4 {
+  font-size: 1rem;
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
+}
+
+.detalle-ficha ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.detalle-stock {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.con-stock {
+  color: var(--color-exito);
+}
+
+.sin-stock {
+  color: var(--color-error);
+}
+
+.boton-agregar-detalle {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-acento);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  max-width: 250px;
+}
+
+.boton-agregar-detalle:hover:not(:disabled) {
+  background-color: var(--color-acento-hover);
+}
+
+.boton-agregar-detalle:disabled {
+  background-color: var(--color-bordes);
+  color: var(--color-texto-secundario);
+  cursor: not-allowed;
+}

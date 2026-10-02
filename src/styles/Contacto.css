@@ -1,0 +1,83 @@
+.contacto-pagina {
+  max-width: 960px;
+}
+
+.contacto-titulo {
+  font-family: 'Georgia', serif;
+  color: var(--color-principal);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-subtitulo {
+  color: var(--color-texto-secundario);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.contacto-info {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-bordes);
+  border-radius: 8px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contacto-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contacto-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-principal);
+  margin: 0 0 0.25rem 0;
+}
+
+.contacto-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-texto-secundario);
+}
+
+.contacto-item a {
+  color: var(--color-acento);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacto-item a:hover {
+  text-decoration: underline;
+}
+
+.contacto-mapa {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--color-bordes);
+  min-height: 300px;
+}
+
+.contacto-mapa iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+}
