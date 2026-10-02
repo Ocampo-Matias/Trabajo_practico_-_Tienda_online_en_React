@@ -67,12 +67,21 @@
   color: var(--color-error);
 }
 
+.carrito-resumen-contenedor {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .tarjeta-resumen {
   background-color: var(--color-superficie);
   border: 1px solid var(--color-bordes);
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1.8rem;
   box-shadow: 0 2px 6px var(--color-sombra);
+  width: 100%;
 }
 
 .tarjeta-resumen h3 {
@@ -112,4 +121,18 @@
 
 .boton-comprar:hover {
   background-color: var(--color-acento-hover);
+}
+
+@media (max-width: 576px) {
+  .tarjeta-resumen {
+    padding: 1.2rem;
+  }
+
+  .resumen-fila-total {
+    font-size: 1rem;
+  }
+
+  .resumen-precio {
+    font-size: 1.2rem;
+  }
 }

@@ -98,3 +98,28 @@
 .boton-eliminar:hover {
   color: var(--color-error);
 }
+
+@media (max-width: 500px) {
+  .item-carrito {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .item-imagen {
+    width: 60px;
+    height: 60px;
+  }
+
+  .item-info {
+    flex: 1 1 calc(100% - 80px);
+  }
+
+  .item-subtotal {
+    min-width: unset;
+    font-size: 0.95rem;
+  }
+
+  .item-cantidad-control {
+    flex-wrap: wrap;
+  }
+}

@@ -128,12 +128,41 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-logo-img {
+    height: 32px;
+    width: 110px;
+    margin-right: -25px;
+  }
+
+  .navbar-logo-texto {
+    font-size: 1.15rem;
+  }
+
+  .navbar-collapse {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
   .navbar-buscador {
     max-width: 100%;
-    margin: 0.75rem 0;
+    margin: 0.75rem 0 1rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    gap: 0.4rem !important;
+    align-items: flex-start !important;
+  }
+
+  .nav-link-tienda {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.9rem !important;
   }
 
   .nav-link-carrito {
     width: fit-content;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem !important;
   }
 }

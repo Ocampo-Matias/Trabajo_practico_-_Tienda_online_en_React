@@ -120,3 +120,18 @@
   color: var(--color-texto-secundario);
   cursor: not-allowed;
 }
+
+@media (max-width: 576px) {
+  .detalle-titulo {
+    font-size: 1.5rem;
+  }
+
+  .detalle-precio {
+    font-size: 1.4rem;
+  }
+
+  .boton-agregar-detalle {
+    max-width: 100%;
+    width: 100%;
+  }
+}

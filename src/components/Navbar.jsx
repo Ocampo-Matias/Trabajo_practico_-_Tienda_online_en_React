@@ -4,11 +4,13 @@ import '../styles/Navbar.css'
 
 function Navbar({ cantidadCarrito = 0 }) {
   const [busqueda, setBusqueda] = useState('')
+  const [menuAbierto, setMenuAbierto] = useState(false)
   const navigate = useNavigate()
 
   const handleBusqueda = (e) => {
     e.preventDefault()
     const termino = busqueda.trim()
+    setMenuAbierto(false)
     if (termino) {
       navigate(`/productos?q=${encodeURIComponent(termino)}`)
     } else {
@@ -16,11 +18,13 @@ function Navbar({ cantidadCarrito = 0 }) {
     }
   }
 
+  const cerrarMenu = () => setMenuAbierto(false)
+
   return (
     <nav className="navbar navbar-expand-lg navbar-tienda sticky-top">
       <div className="container-fluid px-4">
 
-        <NavLink to="/" className="navbar-brand d-flex align-items-center gap-2">
+        <NavLink to="/" className="navbar-brand d-flex align-items-center gap-2" onClick={cerrarMenu}>
           <img src="/la-mesasa-icono.png" alt="La Mesasa" className="navbar-logo-img" />
           <span className="navbar-logo-texto">La Mesasa</span>
         </NavLink>
@@ -28,13 +32,14 @@ function Navbar({ cantidadCarrito = 0 }) {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContenido"
+          onClick={() => setMenuAbierto((prev) => !prev)}
+          aria-expanded={menuAbierto}
+          aria-label="Abrir menú de navegación"
         >
           <span className="navbar-toggler-icon-custom">☰</span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarContenido">
+        <div className={`collapse navbar-collapse ${menuAbierto ? 'show' : ''}`} id="navbarContenido">
 
           <form className="navbar-buscador mx-auto" onSubmit={handleBusqueda}>
             <div className="input-group">
@@ -45,8 +50,7 @@ function Navbar({ cantidadCarrito = 0 }) {
                 value={busqueda}
                 onChange={(e) => setBusqueda(e.target.value)}
               />
-              <button type="submit" className="btn buscador-btn">
-
+              <button type="submit" className="btn buscador-btn" aria-label="Buscar">
               </button>
             </div>
           </form>
@@ -56,6 +60,7 @@ function Navbar({ cantidadCarrito = 0 }) {
               <NavLink
                 to="/"
                 end
+                onClick={cerrarMenu}
                 className={({ isActive }) =>
                   `nav-link nav-link-tienda${isActive ? ' activo' : ''}`
                 }
@@ -67,6 +72,7 @@ function Navbar({ cantidadCarrito = 0 }) {
             <li className="nav-item">
               <NavLink
                 to="/productos"
+                onClick={cerrarMenu}
                 className={({ isActive }) =>
                   `nav-link nav-link-tienda${isActive ? ' activo' : ''}`
                 }
@@ -78,6 +84,7 @@ function Navbar({ cantidadCarrito = 0 }) {
             <li className="nav-item">
               <NavLink
                 to="/contacto"
+                onClick={cerrarMenu}
                 className={({ isActive }) =>
                   `nav-link nav-link-tienda${isActive ? ' activo' : ''}`
                 }
@@ -89,6 +96,7 @@ function Navbar({ cantidadCarrito = 0 }) {
             <li className="nav-item">
               <NavLink
                 to="/carrito"
+                onClick={cerrarMenu}
                 className={({ isActive }) =>
                   `nav-link nav-link-carrito${isActive ? ' activo' : ''}`
                 }

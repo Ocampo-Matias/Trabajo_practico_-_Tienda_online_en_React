@@ -63,24 +63,26 @@ function Carrito({ carrito, eliminarDelCarrito, actualizarCantidad, vaciarCarrit
         </div>
       </div>
 
-      <div className="col-12 col-lg-4">
+      <div className="carrito-resumen-contenedor">
         <div className="tarjeta-resumen">
           <h3>Resumen de compra</h3>
           <div className="resumen-fila-total">
             <span>Total a pagar:</span>
             <strong className="resumen-precio">${totalPrecio.toLocaleString('es-AR')}</strong>
           </div>
-          {mostrarFormulario ? (
-            <FormularioCompra
-              confirmarCompra={manejarConfirmacion}
-              cancelar={() => setMostrarFormulario(false)}
-            />
-          ) : (
+          {!mostrarFormulario && (
             <button className="boton-comprar" onClick={() => setMostrarFormulario(true)}>
               Iniciar compra
             </button>
           )}
         </div>
+
+        {mostrarFormulario && (
+          <FormularioCompra
+            confirmarCompra={manejarConfirmacion}
+            cancelar={() => setMostrarFormulario(false)}
+          />
+        )}
       </div>
     </div>
 

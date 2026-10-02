@@ -16,7 +16,6 @@ function Inicio() {
 
       <section className="banner">
         <div className="banner-overlay">
-          <img src="/la-mesasa-icono.svg" alt="La Mesasa" className="banner-logo" />
           <h1 className="banner-titulo">La Mesasa</h1>
           <p className="banner-descripcion">
             Muebles de madera con identidad. Diseñados para durar, pensados para tu hogar.
