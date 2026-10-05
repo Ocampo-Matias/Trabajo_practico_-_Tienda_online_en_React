@@ -18,12 +18,12 @@ function App() {
 
   const agregarAlCarrito = (id) => {
     const producto = productos.find((p) => p.id === id)
-    if (!producto) return false
+    if (!producto) return
 
     const itemEnCarrito = carrito.find((item) => item.id === id)
     const cantidadActual = itemEnCarrito ? itemEnCarrito.cantidad : 0
 
-    if (cantidadActual >= producto.stock) return false
+    if (cantidadActual >= producto.stock) return 
 
     setCarrito((prev) =>
       itemEnCarrito
@@ -32,7 +32,6 @@ function App() {
         )
         : [...prev, { ...producto, cantidad: 1 }]
     )
-    return true
   }
 
   const eliminarDelCarrito = (id) => {
